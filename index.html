@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FC Porto Snake</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="header">
+            <h1>FC Porto Snake</h1>
+            <div class="score-container">
+                <div>SCORE: <span id="current-score">0</span></div>
+                <div>HIGH SCORE: <span id="high-score">0</span></div>
+            </div>
+        </div>
+        <div class="canvas-wrapper">
+            <canvas id="game-canvas" width="400" height="400"></canvas>
+            <div id="start-screen" class="overlay">
+                <h2>Jogo da Serpente</h2>
+                <p>Usa as setas do teclado para mover o Dragão.</p>
+                <button id="start-button">Jogar</button>
+            </div>
+            <div id="game-over-screen" class="overlay hidden">
+                <h2>Game Over</h2>
+                <p>A tua pontuação: <span id="final-score">0</span></p>
+                <button id="restart-button">Reiniciar</button>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Um protótipo por Saul</p>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
